@@ -1,0 +1,13 @@
+<template>
+  <require from="./button/button"></require>
+  <require from="./button/success-button"></require>
+
+  <my-button color="success"
+             click.call="onClick(1)">
+    Button 1
+  </my-button>
+
+  <success-button click.call="onClick(2)">
+    Button 2
+  </success-button>
+</template>

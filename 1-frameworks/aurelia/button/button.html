@@ -1,0 +1,6 @@
+<template>
+  <button click.delegate="onClick()"
+          css="background-color: ${color === 'success' ? 'green' : color === 'warn' ? 'yellow' : 'red' }">
+    <slot></slot>
+  </button>
+</template>
