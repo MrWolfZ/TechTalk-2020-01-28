@@ -1,3 +1,3 @@
-https://github.com/MrWolfZ/client-technology-days-2019
+https://github.com/MrWolfZ/TechTalk-2020-01-28
 
 ## Questions?

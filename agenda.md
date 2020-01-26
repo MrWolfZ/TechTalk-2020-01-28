@@ -1,7 +1,10 @@
-# Vue, React, Angular, JavaScript, TypeScript, Dart, Flux, Redux, MobX, Vuex, CSS, LESS, SASS, styled-comonents, emotion, Webpack, browserify - what the hell? (2019-09-19)
+# A bunch of opinions on a buch of web technologies (2020-01-28)
 
 1. frameworks
 2. languages
 3. state management
 4. styling
-5. build tools
+5. unit testing
+6. e2e testing
+7. build tools
+8. dev tools
