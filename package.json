@@ -34,6 +34,8 @@
     "@vue/test-utils": "^1.0.0-beta.31",
     "aurelia-bootstrapper": "^2.3.3",
     "aurelia-testing": "^1.0.0",
+    "ava": "^3.0.0",
+    "ts-node": "^8.6.2",
     "typescript": "^3.7.5",
     "vue-template-compiler": "^2.6.11"
   }
