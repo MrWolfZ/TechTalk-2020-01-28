@@ -1,6 +1,6 @@
 import { observable, computed, autorun } from 'mobx'
 
-export class CounterStore {
+class CounterStore {
   @observable count = 0
 
   @computed get countTimesTwo() {
@@ -10,12 +10,17 @@ export class CounterStore {
   increment() {
     this.count += 1
   }
+
+  incrementBy(amount: number) {
+    this.count += amount
+  }
 }
 
-export const store = new CounterStore()
+const store = new CounterStore()
 
 autorun(() => console.log(store.countTimesTwo))
 
 store.increment()
+store.incrementBy(5)
 
 store.count += 2
