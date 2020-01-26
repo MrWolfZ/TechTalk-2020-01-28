@@ -1,0 +1,9 @@
+{
+  "fileServerFolder": "6-e2e-testing/cypress",
+  "fixturesFolder": "6-e2e-testing/cypress/fixtures",
+  "integrationFolder": "6-e2e-testing/cypress/integration",
+  "pluginsFile": "6-e2e-testing/cypress/plugins/index.js",
+  "screenshotsFolder": "6-e2e-testing/cypress/screenshots",
+  "supportFile": "6-e2e-testing/cypress/support/index.js",
+  "videosFolder": "6-e2e-testing/cypress/videos"
+}
