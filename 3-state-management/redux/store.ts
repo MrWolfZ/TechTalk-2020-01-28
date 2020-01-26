@@ -24,6 +24,8 @@ export const counterReducer = (state = 0, action: { type: typeof INCREMENT | typ
 
 export const store = createStore(counterReducer)
 
+store.subscribe(() => console.log(store.getState()))
+
 store.dispatch(increment())
 store.dispatch(increment())
 store.dispatch(decrement())

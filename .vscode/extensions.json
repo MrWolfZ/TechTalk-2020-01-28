@@ -2,6 +2,7 @@
   "recommendations": [
     "octref.vetur",
     "aureliaeffect.aurelia",
-    "jpoissonnier.vscode-styled-components"
+    "jpoissonnier.vscode-styled-components",
+    "elmtooling.elm-ls-vscode"
   ]
 }

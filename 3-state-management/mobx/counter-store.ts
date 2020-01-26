@@ -1,4 +1,4 @@
-import { observable, computed } from 'mobx'
+import { observable, computed, autorun } from 'mobx'
 
 export class CounterStore {
   @observable count = 0
@@ -6,8 +6,16 @@ export class CounterStore {
   @computed get countTimesTwo() {
     return this.count * 2
   }
+
+  increment() {
+    this.count += 1
+  }
 }
 
 export const store = new CounterStore()
+
+autorun(() => console.log(store.countTimesTwo))
+
+store.increment()
 
 store.count += 2

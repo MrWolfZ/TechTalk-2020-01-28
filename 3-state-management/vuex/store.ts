@@ -13,8 +13,8 @@ export const store = new Vuex.Store({
   },
 })
 
+store.subscribe(() => console.log(store.getters.counterTimesTwo))
+
 store.commit('increment')
 store.commit('increment')
 store.commit('decrement')
-
-console.log(store.getters.counterTimesTwo)

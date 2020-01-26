@@ -17,6 +17,7 @@ export function render() {
   return (
     <>
       <SuccessButton onClick={() => void 0}></SuccessButton>
+      <WarnButton onClick={() => void 0}></WarnButton>
     </>
   )
 }
