@@ -3,6 +3,7 @@
     "octref.vetur",
     "aureliaeffect.aurelia",
     "jpoissonnier.vscode-styled-components",
-    "elmtooling.elm-ls-vscode"
+    "elmtooling.elm-ls-vscode",
+    "syler.sass-indented"
   ]
 }

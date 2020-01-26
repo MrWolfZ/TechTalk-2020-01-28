@@ -1,3 +1,5 @@
+@import 'other';
+
 $classes: success danger;
 $colors: green red;
 
@@ -7,5 +9,11 @@ $colors: green red;
     &.#{$class} {
       background-color: nth($colors, $i);
     }
+  }
+}
+
+.button {
+  &.warn {
+    background-color: yellow;
   }
 }

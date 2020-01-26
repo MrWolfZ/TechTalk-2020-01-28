@@ -1,0 +1,14 @@
+@import other
+
+$classes: success danger
+$colors: green red
+
+.button
+  @each $class in $classes
+    $i: index($classes, $class)
+    &.#{$class}
+      background-color: nth($colors, $i)
+
+.button
+  &.warn
+    background-color: yellow
