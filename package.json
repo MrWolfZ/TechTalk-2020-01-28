@@ -4,7 +4,10 @@
   "description": "a talk about various web technologies",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "storybook": "start-storybook"
   },
   "author": "",
   "license": "MIT",
@@ -27,7 +30,11 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.3",
     "@cypress/webpack-preprocessor": "^4.1.1",
+    "@storybook/addon-actions": "^5.3.9",
+    "@storybook/addon-storysource": "^5.3.9",
+    "@storybook/react": "^5.3.9",
     "@testing-library/react": "^9.4.0",
     "@types/jest": "^24.9.1",
     "@types/react": "^16.9.19",
@@ -36,6 +43,7 @@
     "aurelia-bootstrapper": "^2.3.3",
     "aurelia-testing": "^1.0.0",
     "ava": "^3.0.0",
+    "babel-loader": "^8.0.6",
     "cypress": "^3.8.3",
     "parcel-bundler": "^1.12.4",
     "ts-loader": "^6.2.1",

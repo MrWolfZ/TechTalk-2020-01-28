@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig",
+  "compilerOptions": {
+    "isolatedModules": false,
+    "noEmit": false,
+  },
+  "include": [
+    "../8-dev-tools/storybook/**/*"
+  ],
+  "exclude": [
+    "../node_modules"
+  ],
+}
