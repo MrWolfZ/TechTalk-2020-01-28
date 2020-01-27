@@ -1,11 +1,12 @@
 import Vuex from 'vuex'
 
-const store = new Vuex.Store({
+export const store = new Vuex.Store({
   state: {
     counter: 0
   },
   getters: {
-    counterTimesTwo: state => state.counter * 2
+    counterTimesTwo: state => state.counter * 2,
+    counterTimes: state => (amount: number) => state.counter * amount
   },
   mutations: {
     increment: state => state.counter += 1,
@@ -75,7 +76,7 @@ const asyncCounter: Module<{ asyncCounter: number }, any> = {
   },
 };
 
-const modularStore = new Vuex.Store({
+export const modularStore = new Vuex.Store({
   modules: {
     syncCounter,
     asyncCounter,

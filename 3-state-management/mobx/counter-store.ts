@@ -1,6 +1,6 @@
 import { observable, computed, autorun } from 'mobx'
 
-class CounterStore {
+export class CounterStore {
   @observable count = 0
 
   @computed get countTimesTwo() {

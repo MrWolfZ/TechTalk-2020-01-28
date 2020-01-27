@@ -4,16 +4,16 @@ const INCREMENT = 'INCREMENT'
 const INCREMENT_BY = 'INCREMENT_BY'
 const DECREMENT = 'DECREMENT'
 
-const increment = () => ({
+export const increment = () => ({
   type: INCREMENT
 } as const)
 
-const incrementBy = (amount: number) => ({
+export const incrementBy = (amount: number) => ({
   type: INCREMENT_BY,
   amount,
 } as const)
 
-const decrement = () => ({
+export const decrement = () => ({
   type: DECREMENT
 } as const)
 
@@ -32,11 +32,11 @@ const counterReducer = (state = 0, action: Actions) => {
   }
 }
 
-const appReducer = combineReducers({
+export const appReducer = combineReducers({
   counter: counterReducer,
 })
 
-const store = createStore(appReducer)
+export const store = createStore(appReducer)
 
 store.subscribe(() => console.log(store.getState()))
 
@@ -76,7 +76,7 @@ store.dispatch(decrement())
 
 import thunk, { ThunkAction, ThunkMiddleware } from 'redux-thunk'
 
-type RootState = ReturnType<typeof appReducer>
+export type RootState = ReturnType<typeof appReducer>
 type AppThunk = ThunkAction<void, RootState, undefined, Action<string>>
 
 const asyncStore = createStore(appReducer, applyMiddleware(thunk as ThunkMiddleware<RootState, Actions>))
