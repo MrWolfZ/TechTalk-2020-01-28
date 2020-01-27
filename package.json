@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "storybook": "start-storybook"
+    "parcel:serve": "parcel 7-build-tools/parcel/index.html",
+    "parcel:build": "parcel build 7-build-tools/parcel/index.html",
+    "storybook": "start-storybook",
+    "webpack": "webpack 7-build-tools/webpack/index.js --mode production"
   },
   "author": "",
   "license": "MIT",
